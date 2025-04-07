@@ -22,3 +22,7 @@ INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) VALUES ('1.0', 
 INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-20T03:00:00Z',TIMESTAMP WITH TIME ZONE '2021-12-20T03:00:00Z',1);
 
 INSERT INTO tb_notification(text,moment,read,route,user_id) VALUES ('Teste 1',TIMESTAMP WITH TIME ZONE '2020-11-20T03:00:00Z',false,'Teste1',1);
+
+INSERT INTO tb_resource(title,description, position,img_Uri, type, offer_id) VALUES ('Trilha HTML','Trilha principal do curso', 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4kJKLE19b3Veca_E80yM8SBFdVkdaUkSgw&s',1,1);
+INSERT INTO tb_resource(title,description, position,img_Uri, type, offer_id) VALUES ('Forum','Tire suas dúvidas', 2, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4kJKLE19b3Veca_E80yM8SBFdVkdaUkSgw&s',2,1);
+INSERT INTO tb_resource(title,description, position,img_Uri, type, offer_id) VALUES ('Lives','Lives exclusivas para tuma', 3, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4kJKLE19b3Veca_E80yM8SBFdVkdaUkSgw&s',0,1);
