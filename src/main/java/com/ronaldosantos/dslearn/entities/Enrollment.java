@@ -4,6 +4,7 @@ import java.time.Instant;
 
 import com.ronaldosantos.dslearn.entities.pk.EnrollmentPK;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -14,8 +15,13 @@ public class Enrollment {
 	
 	@EmbeddedId
 	private EnrollmentPK id = new EnrollmentPK();
+	
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant enrollMoment;
+	
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant refundMoment;
+	
 	private boolean avaliable;
 	private boolean onlyUpdate;
 	
