@@ -8,16 +8,16 @@ import jakarta.persistence.Table;
 public class Content extends Lesson {
 	
 	private String textContent;
-	private String videroUri;
+	private String videoUri;
 	
 	public Content() {
 		
 	}
 
-	public Content(Long id, String title, Integer position, Section section, String textContent, String videroUri) {
+	public Content(Long id, String title, Integer position, Section section, String textContent, String videoUri) {
 		super(id, title, position, section);
 		this.textContent = textContent;
-		this.videroUri = videroUri;
+		this.videoUri = videoUri;
 	}
 
 	public String getTextContent() {
@@ -28,12 +28,12 @@ public class Content extends Lesson {
 		this.textContent = textContent;
 	}
 
-	public String getVideroUri() {
-		return videroUri;
+	public String getvideoUri() {
+		return videoUri;
 	}
 
-	public void setVideroUri(String videroUri) {
-		this.videroUri = videroUri;
+	public void setvideoUri(String videoUri) {
+		this.videoUri = videoUri;
 	}
 
 }

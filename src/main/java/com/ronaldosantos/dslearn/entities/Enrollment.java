@@ -1,12 +1,15 @@
 package com.ronaldosantos.dslearn.entities;
 
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.ronaldosantos.dslearn.entities.pk.EnrollmentPK;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -25,6 +28,8 @@ public class Enrollment {
 	private boolean avaliable;
 	private boolean onlyUpdate;
 	
+	@ManyToMany(mappedBy = "enrollmentsDone")
+	private Set<Lesson> lessonsDone = new HashSet<>();
 	
 	public Enrollment() {
 		
